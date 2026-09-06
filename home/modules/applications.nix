@@ -1,13 +1,14 @@
 { pkgs, ... }:
 {
+  # add icon to app
   xdg.desktopEntries.logseqDB = {
     name = "Logseq";
-    exec= "logseqDB --ozone-platform=x11";
+    exec = "logseqDB --ozone-platform=x11";
     categories = [ "Education" ];
   };
   xdg.desktopEntries.drawio = {
     name = "Drawio";
-    exec= "drawio --ozone-platform=x11";
+    exec = "drawio --ozone-platform=x11";
     categories= [ "Graphics" ];
   };
   xdg.desktopEntries.obsidian = {
