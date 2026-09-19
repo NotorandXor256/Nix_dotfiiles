@@ -15,6 +15,11 @@ in
     logseqDB    #logseq-patch 
     syncthing
     mmex 
+    libreoffice
+    brave
+    kicad
+    protonmail-desktop
+    stellarium
 
     # CLI utils
     vim
@@ -26,7 +31,7 @@ in
     wl-clipboard
     zsh
     ntfs3g
-    
+    # ollama    
 
     # Coding stuff
     git
@@ -38,7 +43,6 @@ in
     binutils
     gdb
     valgrind
-
 
     # WM stuff
     # Other
