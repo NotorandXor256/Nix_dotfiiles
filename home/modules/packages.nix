@@ -6,34 +6,47 @@ in
   nixpkgs.config.allowUnfree = true;
   home.packages = (with pkgs; [
     # Destop apps
-    # CLI utils
-    # Coding stuff
-    # WM stuff
-    # Other
-    vim
-    wget
-    btop
-    git
-    gcc
-    python3
     kitty
     drawio
     kdePackages.kdeconnect-kde
     logisim-evolution
+    vlc
+    obsidian
+    logseqDB    #logseq-patch 
+    syncthing
+    mmex 
+    libreoffice
+    brave
+    kicad
+    protonmail-desktop
+    stellarium
+
+    # CLI utils
+    vim
+    wget
+    btop
     fastfetch
     tmux
-    #logseq-patch 
-    syncthing
     yazi
     wl-clipboard
-    vlc
     zsh
-    obsidian
     ntfs3g
-    logseqDB
+    # ollama    
+
+    # Coding stuff
+    git
+    nodejs
+    docker
+    python3
     gcc  #avaible by default
     gnumake
     binutils
+    gdb
+    valgrind
+
+    # WM stuff
+    # Other
+        
   ]) ++ (with pkgs_unstable; [
     godot
   ]);

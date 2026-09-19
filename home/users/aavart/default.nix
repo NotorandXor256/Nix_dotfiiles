@@ -1,8 +1,9 @@
-{ homeStateVersion, inputs, pkgs_unstable, ... }: {
+{ pkgs, homeStateVersion, inputs, pkgs_unstable, ... }: {
   imports = [
     inputs.nix4nvchad.homeManagerModules.default
     ../../modules/applications.nix
     ../../modules/bash.nix
+    ../../modules/nvchad.nix
     ../../modules/userSetting.nix
     ../../modules/git.nix 
     ../../modules/packages.nix
@@ -22,13 +23,8 @@
   
   programs.home-manager.enable = true;
   programs.firefox.enable= true;
-  programs.nvchad={
-    enable= true;
-  };
-  programs.bash = {
+  programs.nnn ={
     enable = true;
-    shellAliases={
-      logseq= "logseqDB --ozone-platform=x11";
-    };
+    quitcd = true;
   };
 }
