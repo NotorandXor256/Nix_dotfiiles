@@ -18,8 +18,10 @@ in
     libreoffice
     brave
     kicad
-    protonmail-desktop
+    # protonmail-desktop
     stellarium
+    super-productivity
+    paperless-ngx
 
     # CLI utils
     vim
@@ -31,7 +33,9 @@ in
     wl-clipboard
     zsh
     ntfs3g
-    # ollama    
+    ollama    
+    android-tools
+    nmap
 
     # Coding stuff
     git
