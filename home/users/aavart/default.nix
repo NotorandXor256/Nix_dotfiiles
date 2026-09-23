@@ -17,8 +17,8 @@
     stateVersion = "26.05";
   };
   userSettings = {
-    name="aavartsharma";
-    email="rockstarfan0369@gmail.com";
+    name="Notorandxor_turing";
+    email="105069473+NotorandXor256@users.noreply.github.com";
   };
   
   programs.home-manager.enable = true;

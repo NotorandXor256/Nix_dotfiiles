@@ -6,7 +6,6 @@
       -- Custom vim options
       vim.opt.shiftwidth = 2
       vim.opt.tabstop = 2
-      vim.opt.expandtab = true
       vim.wo.relativenumber = true
   
       -- Custom keymaps
