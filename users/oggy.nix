@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }:
 {
-  users.users.aavart = {
+  users.users.oggy = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" ];
-    hashedPassword = "$y$j9T$uNVg8bowHdcGeHoYE7a1J/$IM6LyPHICYlzqUFeO1fGHhVh/SYkftr6TVp3stlhlA0";
+    hashedPassword = "$y$j9T$QrA2M0q8gdSRDXPcL6W0q1$BrmD7NIUWffoDmjK7GooEVANBZwdo4tDMqckttTMtJA";
     packages = with pkgs; [
       tree
     ];

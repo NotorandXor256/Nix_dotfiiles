@@ -1,6 +1,6 @@
 { pkgs, pkgs_unstable, ... }:
 let
-  logseqDB = import ../../pkgs/logseqDB/default.nix  { inherit pkgs; };
+  logseqDB = import ../../../pkgs/logseqDB/default.nix  { inherit pkgs; };
 in 
 {
   # nixpkgs.config.allowUnfree = true;

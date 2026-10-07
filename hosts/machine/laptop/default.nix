@@ -7,14 +7,13 @@ in
   imports= 
   [
     ./hardware-configuration.nix
-    ../../modules/desktop/plasma.nix
     ../../modules/fonts/default.nix
     ../../modules/hardware/audio.nix
     ../../modules/hardware/bootloader.nix
     ../../modules/hardware/bluetooth.nix
     ../../modules/hardware/networkmanager.nix
     ../../modules/hardware/zram.nix
-    ../../users/aavart.nix
+    ../../modules/desktop/plasma.nix
   ];
   
   nixpkgs.config.allowUnfree = true;
