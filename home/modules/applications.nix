@@ -11,14 +11,14 @@
     exec = "drawio --ozone-platform=x11";
     categories= [ "Graphics" ];
   };
-  xdg.desktopEntries.obsidian = {
-    name = "Obsidian";
-    exec = "obsidian --ozone-platform=x11";
-    categories = [ "Office" ];
-  };
+  # xdg.desktopEntries.obsidian = {
+  #   name = "Obsidian";
+  #   exec = "obsidian --ozone-platform=x11";
+  #   categories = [ "Office" ];
+  # };
   xdg.desktopEntries.super-productivity = {
-    name = "superProductivity";
-    exec = "super-productivity --ozone-platform=x11";
+    name = "Super Productivity";
+    exec = "superproductivity --ozone-platform=x11";
     categories = [ "Office" ];
   };
 }

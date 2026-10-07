@@ -3,7 +3,7 @@ let
   logseqDB = import ../../pkgs/logseqDB/default.nix  { inherit pkgs; };
 in 
 {
-  nixpkgs.config.allowUnfree = true;
+  # nixpkgs.config.allowUnfree = true;
   home.packages = (with pkgs; [
     # Destop apps
     kitty
@@ -11,27 +11,26 @@ in
     kdePackages.kdeconnect-kde
     logisim-evolution
     vlc
-    obsidian
+    # obsidian
     logseqDB    #logseq-patch 
     syncthing
     mmex 
-    libreoffice
+    # libreoffice
     brave
-    kicad
+    # kicad
     # protonmail-desktop
     stellarium
-    super-productivity
     paperless-ngx
 
     # CLI utils
     vim
     wget
+    curl
     btop
     fastfetch
     tmux
-    yazi
+    # yazi
     wl-clipboard
-    zsh
     ntfs3g
     ollama    
     android-tools
@@ -52,6 +51,7 @@ in
     # Other
         
   ]) ++ (with pkgs_unstable; [
-    godot
+    # godot
+    super-productivity
   ]);
 }
