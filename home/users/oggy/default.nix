@@ -5,20 +5,13 @@
     ../../modules/nvchad.nix
     ../../modules/git.nix 
 
-    modules/userSetting.nix
     modules/packages.nix
-    modules/setting.nix
-    modules/applications.nix
     modules/programs.nix
   ];
 
   home = {
-    username = "aavart";
-    homeDirectory = "/home/aavart";
+    username = "oggy";
+    homeDirectory = "/home/oggy";
     stateVersion = "26.05";
-  };
-  userSettings = {
-    name="Notorandxor_turing";
-    email="105069473+NotorandXor256@users.noreply.github.com";
   };
 }
