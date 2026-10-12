@@ -4,6 +4,7 @@
     ../../modules/bash.nix
     ../../modules/nvchad.nix
     ../../modules/git.nix 
+    ../../modules/programs.nix
 
     modules/packages.nix
     modules/programs.nix
