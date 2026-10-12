@@ -2,6 +2,9 @@
 {
   # nixpkgs.config.allowUnfree = true;
   home.packages = (with pkgs; [
+    #termial
+    kitty.terminfo # caused problems if removed
+
     # CLI utils
     vim
     wget

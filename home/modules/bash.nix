@@ -6,9 +6,5 @@
 	    btw = "echo 'I use nixos'";
 	  };
   };
-  /*programs.bash = {
-    enable = true;
-    shellAliases={
-    };
-  }; */
+  
 }

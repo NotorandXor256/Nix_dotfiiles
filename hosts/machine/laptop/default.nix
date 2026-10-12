@@ -14,9 +14,11 @@ in
     ../../modules/hardware/networkmanager.nix
     ../../modules/hardware/zram.nix
     ../../modules/desktop/plasma.nix
+    ../../modules/desktop/virtualisation.nix
+    ../../modules/services/ssh.nix
   ];
   
-  nixpkgs.config.allowUnfree = true;
+  # nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     pkgs.home-manager     
   ];
