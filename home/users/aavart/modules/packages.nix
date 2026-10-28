@@ -20,7 +20,8 @@ in
     # kicad
     # protonmail-desktop
     stellarium
-    paperless-ngx
+    # paperless-ngx
+    monero-gui
 
     # CLI utils
     vim

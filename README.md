@@ -1,63 +1,70 @@
 # Nix_dotfiiles
 
 ```
-nixos-config/
-├── flake.nix
+
+.
 ├── flake.lock
-├── hosts/
-│   ├── desktop/
-│   │   ├── default.nix
-│   │   └── hardware-configuration.nix
-│   │   └── disks.nix
-│   │   └── boot.nix
-│   ├── laptop/
-│   │   ├── default.nix
-│   │   └── hardware-configuration.nix
-│   └── server/
-│       ├── default.nix
-│       └── hardware-configuration.nix
-├── modules/
-│   ├── desktop/
-│   │   ├── gnome.nix
-│   │   ├── kde.nix
-│   ├── fonts/
-│   │   └── defalt.nix
-│   ├── services/
-│   │   ├── ssh.nix
-│   │   ├── docker.nix
-│   │   └── tailscale.nix
-│   ├── hardware/
-|   |   |── bluetooth.nix
-│   │   ├── printing.nix
-│   │   └── sound.nix
-├   |── development/
-│   │   ├── rust.nix
-│   │   ├── python.nix
-│   │   └── node.nix
-│   └── common.nix
-├── users/
-│   ├── alice.nix
-│   └── bob.nix
-├── pkgs/
-│   ├── my-script/ 
-│   ├── patched-firefox/
-│   └── default.nix
-├── overlays/
-│   └── default.nix
-|── home/
-    ├── users/ 
-        ├── alice/
-            ├── default.nix
-            ├── ssh.nix
-        ├── bob/          
-            ├── default.nix
-    └── common.nix
-    ├── default.nix
-    └── modules/ 
-        └── git.nix
-        ├── shell.nix
-        └── neovim.nix
-        └── firefox.nix
+├── flake.nix
+├── home
+│   ├── home.nix
+│   ├── modules
+│   │   ├── bash.nix
+│   │   ├── git.nix
+│   │   ├── nvchad.nix
+│   │   ├── programs.nix
+│   │   └── tmux.nix
+│   ├── pkgs
+│   │   └── logseqDB
+│   │       └── default.nix
+│   └── users
+│       ├── aavart
+│       │   ├── default.nix
+│       │   └── modules
+│       │       ├── applications.nix
+│       │       ├── obsidian.nix
+│       │       ├── packages.nix
+│       │       ├── programs.nix
+│       │       ├── setting.nix
+│       │       ├── userSetting.nix
+│       │       ├── yazi.nix
+│       │       └── zsh.nix
+│       └── oggy
+│           ├── default.nix
+│           └── modules
+│               ├── packages.nix
+│               ├── programs.nix
+│               └── services.nix
+├── hosts
+│   ├── machine
+│   │   ├── laptop
+│   │   │   ├── default.nix
+│   │   │   └── hardware-configuration.nix
+│   │   └── silica
+│   │       ├── default.nix
+│   │       └── hardware-configuration.nix
+│   └── modules
+│       ├── desktop
+│       │   ├── packages.nix
+│       │   ├── plasma.nix
+│       │   ├── programs.nix
+│       │   └── virtualisation.nix
+│       ├── fonts
+│       │   └── default.nix
+│       ├── hardware
+│       │   ├── audio.nix
+│       │   ├── bluetooth.nix
+│       │   ├── bootloader.nix
+│       │   ├── networkmanager.nix
+│       │   └── zram.nix
+│       └── services
+│           └── ssh.nix
+├── LICENSE
+├── overlays
+│   └── default.nix
+├── README.md
+└── users
+    ├── aavart.nix
+    └── oggy.nix
 
 ```
 

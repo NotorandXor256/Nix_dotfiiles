@@ -15,6 +15,7 @@ in
     ../../modules/hardware/zram.nix
     ../../modules/desktop/plasma.nix
     ../../modules/desktop/virtualisation.nix
+    ../../modules/desktop/programs.nix
     ../../modules/services/ssh.nix
   ];
   

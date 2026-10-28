@@ -8,7 +8,7 @@
     useGlobalPkgs = true;
     useUserPackages = true;
     backupFileExtension = "backup";
-	  extraSpecialArgs = { 
+    extraSpecialArgs = { 
       inherit inputs; 
       inherit pkgs_unstable;
     };
@@ -17,9 +17,9 @@
 
     # When running sudo nixos-rebuild switch, the configuration of home-manager 
     # will be applied automatically. (It's not necessary to run home-manager 
-    # switch manually!)
+    # switch manually!) 
 
-	  users =  builtins.listToAttrs (
+    users =  builtins.listToAttrs (
         map (username: {
           name = username;
           value = import ./users/${username}/default.nix;
