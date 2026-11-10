@@ -15,6 +15,9 @@
       fd
       fzf
 
+      # Required for many NvChad plugin
+      wl-clipboard
+
       # Lua
       lua-language-server
       stylua
@@ -51,9 +54,6 @@
       
       # YAML / JSON
       yaml-language-server
-
-      # Shell
-      bash-language-server
     ];
   };
 }

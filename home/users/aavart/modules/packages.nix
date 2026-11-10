@@ -39,14 +39,9 @@ in
 
     # Coding stuff
     git
-    nodejs
     docker
     python3
     gcc  #avaible by default
-    gnumake
-    binutils
-    gdb
-    valgrind
 
     # WM stuff
     # Other

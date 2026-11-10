@@ -73,4 +73,6 @@ nix flake update
 
 sudo nixos-rebuild switch --flake .#laptop
 
+sudo nix-store --optimize
+
 ```
