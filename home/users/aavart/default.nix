@@ -17,6 +17,9 @@
     username = "aavart";
     homeDirectory = "/home/aavart";
     stateVersion = "26.05";
+    sessionVariables = {
+       NIXPKG = "../../../shell/";
+    };
   };
   userSettings = {
     name="Notorandxor_turing";

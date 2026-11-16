@@ -12,7 +12,6 @@
     btop
     fastfetch
     tmux
-    # yazi
     wl-clipboard
     ntfs3g
     ollama    

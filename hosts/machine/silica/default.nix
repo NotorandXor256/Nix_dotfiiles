@@ -11,9 +11,8 @@
     ../../modules/hardware/zram.nix
   ];
 
-  nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
-    pkgs.home-manager     
+    home-manager     
   ];
 
   nix.settings.experimental-features = [ 

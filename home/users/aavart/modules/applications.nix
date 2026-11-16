@@ -16,7 +16,7 @@
   #   exec = "obsidian --ozone-platform=x11";
   #   categories = [ "Office" ];
   # };
-  xdg.desktopEntries.super-productivity = {
+  xdg.desktopEntries.superproductivity = {
     name = "Super Productivity";
     exec = "superproductivity --ozone-platform=x11";
     categories = [ "Office" ];

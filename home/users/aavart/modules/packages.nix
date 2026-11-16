@@ -20,7 +20,8 @@ in
     # kicad
     # protonmail-desktop
     stellarium
-    paperless-ngx
+    # paperless-ngx
+    monero-gui
 
     # CLI utils
     vim
@@ -38,14 +39,9 @@ in
 
     # Coding stuff
     git
-    nodejs
     docker
     python3
     gcc  #avaible by default
-    gnumake
-    binutils
-    gdb
-    valgrind
 
     # WM stuff
     # Other

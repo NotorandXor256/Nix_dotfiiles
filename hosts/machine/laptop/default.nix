@@ -15,12 +15,14 @@ in
     ../../modules/hardware/zram.nix
     ../../modules/desktop/plasma.nix
     ../../modules/desktop/virtualisation.nix
+    ../../modules/desktop/programs.nix
     ../../modules/services/ssh.nix
+    ../../modules/services/netbird.nix
   ];
   
   # nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
-    pkgs.home-manager     
+    home-manager     
   ];
 
   nix.settings.experimental-features = [ 

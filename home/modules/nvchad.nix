@@ -2,18 +2,14 @@
 {
   programs.nvchad={
     enable= true;
-    extraConfig = ''
-      -- Custom vim options
-      vim.opt.shiftwidth = 2
-      vim.opt.tabstop = 2
-      vim.wo.relativenumber = true
-  
-      -- Custom keymaps
-    '';
+    extraConfig = builtins.readFile ./neovim/lspconfig.lua;
     extraPackages = with pkgs; [
       ripgrep
       fd
       fzf
+
+      # Required for many NvChad plugin
+      wl-clipboard
 
       # Lua
       lua-language-server
@@ -51,9 +47,6 @@
       
       # YAML / JSON
       yaml-language-server
-
-      # Shell
-      bash-language-server
     ];
   };
 }
