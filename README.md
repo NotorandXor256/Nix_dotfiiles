@@ -1,7 +1,6 @@
 # Nix_dotfiiles
 
 ```
-
 .
 ├── flake.lock
 ├── flake.nix
@@ -10,6 +9,8 @@
 │   ├── modules
 │   │   ├── bash.nix
 │   │   ├── git.nix
+│   │   ├── neovim
+│   │   │   └── lspconfig.lua
 │   │   ├── nvchad.nix
 │   │   ├── programs.nix
 │   │   └── tmux.nix
@@ -57,14 +58,19 @@
 │       │   ├── networkmanager.nix
 │       │   └── zram.nix
 │       └── services
+│           ├── netbird.nix
 │           └── ssh.nix
 ├── LICENSE
 ├── overlays
 │   └── default.nix
 ├── README.md
+├── shell
+│   ├── flake.lock
+│   └── flake.nix
 └── users
     ├── aavart.nix
     └── oggy.nix
+
 
 ```
 
@@ -74,5 +80,7 @@ nix flake update
 sudo nixos-rebuild switch --flake .#laptop
 
 sudo nix-store --optimize
+
+nix develop --no-update-lock-file ~/dotfiles/shell/#python 
 
 ```
